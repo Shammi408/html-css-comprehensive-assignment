@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="About InnovateTech Solutions — history, team and values.">
+  <link rel="icon" href="images/favicon.ico">
+  <title>About — InnovateTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-layout">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="InnovateTech logo" class="logo"><span class="brand-name">InnovateTech</span></a>
+      <input type="checkbox" id="nav-toggle-about" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle-about" class="nav-toggle-label"><span class="hamburger"></span><span class="visually-hidden">Menu</span></label>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary">Get Started</a></div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="company-history container" aria-labelledby="history-heading">
+      <h1 id="history-heading">Our History</h1>
+      <p>Founded by engineers, InnovateTech has grown from a small team to a multidisciplinary product studio.</p>
+      <ol class="timeline">
+        <li><strong>2017</strong> — Company founded by a group of engineers.</li>
+        <li><strong>2020</strong> — Expanded into cloud and DevOps services.</li>
+        <li><strong>2022</strong> — Launched the first enterprise product for a fintech client.</li>
+        <li><strong>2024</strong> — Reached 50+ engineers and opened a second office.</li>
+      </ol>
+    </section>
+
+    <section id="team" class="team container" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet the Team</h2>
+      <p class="section-lead">Small teams, strong impact.</p>
+      <div class="team-grid">
+        <article class="team-member">
+          <img src="images/team-photos/person1.jpg" alt="Aarti Rakesh — CEO">
+          <h3>Aarti Rakesh</h3>
+          <p class="role">CEO &amp; Co-founder</p>
+        </article>
+        <article class="team-member">
+          <img src="images/team-photos/person2.jpg" alt="Raj Kumar — CTO">
+          <h3>Raj Kumar</h3>
+          <p class="role">CTO</p>
+        </article>
+        <article class="team-member">
+          <img src="images/team-photos/person3.jpg" alt="Ansh Singh — Head of Product">
+          <h3>Ansh Singh</h3>
+          <p class="role">Head of Product</p>
+        </article>
+        <article class="team-member">
+          <img src="images/team-photos/person4.jpg" alt="Daniel Lee — Eng Manager">
+          <h3>Daniel Lee</h3>
+          <p class="role">Engineering Manager</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="values container" aria-labelledby="values-heading">
+      <h2 id="values-heading">Our Values</h2>
+      <ul class="values-list">
+        <li><strong>Ownership</strong> — We take responsibility and deliver.</li>
+        <li><strong>Clarity</strong> — Clear communication and priorities.</li>
+        <li><strong>Quality</strong> — We write maintainable code and test it.</li>
+        <li><strong>Empathy</strong> — We build products with users in mind.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col"><a href="index.html" class="logo-footer"><img src="images/logo.png" alt="InnovateTech logo"></a></div>
+      <div class="footer-col"><h4>Contact</h4><p><a href="mailto:helpdesk@innovatetech.incom">helpdesk@innovatetech.incom</a></p></div>
+    </div>
+    <div class="site-legal container"><p>&copy; <span id="year-about">2025</span> InnovateTech Solutions</p></div>
+  </footer>
+
+  <script>document.getElementById('year-about').textContent = new Date().getFullYear();</script>
+</body>
+</html>

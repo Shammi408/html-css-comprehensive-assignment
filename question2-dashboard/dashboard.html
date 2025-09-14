@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Dashboard — InnovateTech</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-layout">
+  <aside class="sidebar" aria-label="Sidebar Navigation">
+    <div class="sidebar-top">
+      <h1 class="logo">InnovateTech</h1>
+      <nav class="sidebar-nav" aria-label="Main">
+        <ul>
+          <li class="active"> Dashboard</li>
+          <li>📦 Products</li>
+          <li>🧾 Orders</li>
+          <li>👥 Customers</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="profile">
+        <img src="images/user-avatar.png" alt="User avatar" class="avatar">
+        <div>
+          <p class="name">Admin User</p>
+          <p class="role">Administrator</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <header class="header" role="banner">
+    <div class="header-left">
+      <button class="btn icon-btn" aria-label="Toggle sidebar">☰</button>
+      <h2 class="page-title">Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <label class="search">
+        <input type="search" placeholder="Search..." aria-label="Search">
+      </label>
+
+      <div class="dropdown notifications">
+        <button class="btn icon-btn">🔔</button>
+        <div class="dropdown-menu" aria-hidden="true">
+          <p class="muted">No new notifications</p>
+        </div>
+      </div>
+
+      <div class="dropdown profile-dropdown">
+        <button class="btn profile-btn">
+          <img src="images/user-avatar.png" alt="Profile" class="avatar-small">
+          <span class="visually-hidden">Open profile menu</span>
+        </button>
+        <div class="dropdown-menu" aria-hidden="true">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" role="main">
+    <section class="stats">
+      <div class="stats-grid">
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <div class="card-body">
+            <p class="label">Revenue</p>
+            <p class="value">$42,320</p>
+            <p class="change positive">+8.2%</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <div class="card-body">
+            <p class="label">Users</p>
+            <p class="value">8,124</p>
+            <p class="change positive">+2.1%</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛒</div>
+          <div class="card-body">
+            <p class="label">Orders</p>
+            <p class="value">1,032</p>
+            <p class="change negative">-1.4%</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <div class="card-body">
+            <p class="label">Growth</p>
+            <p class="value">12.4%</p>
+            <p class="change positive">+0.8%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tables">
+      <h3>Recent Orders</h3>
+      <div class="table-wrap">
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Order ID ▲</th>
+              <th>Customer</th>
+              <th>Product</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>#1001</td><td>Riya</td><td>Pro Widget</td><td>$120.00</td><td><span class="badge shipped">Shipped</span></td><td>2025-09-01</td></tr>
+            <tr><td>#1002</td><td>Arjun</td><td>Starter Kit</td><td>$45.00</td><td><span class="badge pending">Pending</span></td><td>2025-09-02</td></tr>
+            <tr><td>#1003</td><td>Sana</td><td>Advanced Plan</td><td>$300.00</td><td><span class="badge cancelled">Cancelled</span></td><td>2025-09-03</td></tr>
+            <tr><td>#1004</td><td>Vikram</td><td>Pro Widget</td><td>$120.00</td><td><span class="badge shipped">Shipped</span></td><td>2025-09-03</td></tr>
+            <tr><td>#1005</td><td>Neha</td><td>Starter Kit</td><td>$45.00</td><td><span class="badge pending">Pending</span></td><td>2025-09-04</td></tr>
+            <tr><td>#1006</td><td>Rohit</td><td>Advanced Plan</td><td>$300.00</td><td><span class="badge shipped">Shipped</span></td><td>2025-09-05</td></tr>
+            <tr><td>#1007</td><td>Anita</td><td>Pro Widget</td><td>$120.00</td><td><span class="badge pending">Pending</span></td><td>2025-09-06</td></tr>
+            <tr><td>#1008</td><td>Imran</td><td>E-commerce Pro</td><td>$220.00</td><td><span class="badge shipped">Shipped</span></td><td>2025-09-07</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="6">Showing 8 recent orders</td></tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h3>User Analytics</h3>
+      <table class="analytics-table">
+        <thead>
+          <tr><th colspan="2">User Type</th><th>Count</th><th>Percentage</th><th>Trend</th></tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="2">Guest</td><td>3,200</td><td>39.4%</td><td>↘︎</td></tr>
+          <tr><td colspan="2">Registered</td><td>4,500</td><td>55.4%</td><td>↗︎</td></tr>
+          <tr><td colspan="2">Admin</td><td>424</td><td>5.2%</td><td>→</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Total</td><td>8,124</td><td>100%</td><td>—</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="quick-actions">
+      <h3>Quick Actions — Add New Product</h3>
+      <form class="product-form" action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Product Information</legend>
+          <label for="pname">Product Name *</label>
+          <input id="pname" name="pname" type="text" required>
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option>Electronics</option>
+            <option>Accessories</option>
+            <option>Software</option>
+          </select>
+
+          <label for="price">Price ($)</label>
+          <input id="price" name="price" type="number" min="0" max="10000" step="0.01">
+        </fieldset>
+
+        <fieldset>
+          <legend>Inventory</legend>
+          <label for="stock">Stock Quantity</label>
+          <input id="stock" name="stock" type="number" min="0">
+
+          <label for="reorder">Reorder Level</label>
+          <input id="reorder" name="reorder" type="number" min="0">
+
+          <label for="supplier">Supplier</label>
+          <select id="supplier" name="supplier">
+            <option>Supplier A</option>
+            <option>Supplier B</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Media & Status</legend>
+          <label for="image">Product Image</label>
+          <input id="image" name="image" type="file" accept="image/*">
+
+          <label><input type="checkbox" name="featured"> Featured Product</label>
+
+          <p>Active Status</p>
+          <label><input type="radio" name="active" value="active" checked> Active</label>
+          <label><input type="radio" name="active" value="inactive"> Inactive</label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn" disabled>Save & Continue</button>
+          <button type="reset" class="btn btn-outline">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <button class="fab" aria-label="Add">＋</button>
+
+</body>
+</html>

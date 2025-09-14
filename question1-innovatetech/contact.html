@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact InnovateTech Solutions — office information and contact form.">
+  <link rel="icon" href="images/favicon.ico">
+  <title>Contact — InnovateTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-layout">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="InnovateTech logo" class="logo"><span class="brand-name">InnovateTech</span></a>
+      <input type="checkbox" id="nav-toggle-contact" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle-contact" class="nav-toggle-label"><span class="hamburger"></span><span class="visually-hidden">Menu</span></label>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta"><a href="#contact-form" class="btn btn-primary">Get Started</a></div>
+    </div>
+  </header>
+
+  <main class="site-main container">
+    <section class="contact-info" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Contact Us</h1>
+      <address>
+        InnovateTech Solutions<br>
+        123 Innovation Drive,<br>
+        Bangalore, India
+      </address>
+      <p>Phone: <a href="tel:+911234567890">+91 123 456 7890</a><br>Email: <a href="mailto:helpdesk@innovatetech.incom">helpdesk@innovatetech.incom</a></p>
+
+      <h2>Office Hours</h2>
+      <table class="office-hours" role="table">
+        <thead><tr><th scope="col">Day</th><th scope="col">Open</th><th scope="col">Close</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Monday - Friday</th><td>09:30</td><td>17:30</td></tr>
+          <tr><th scope="row">Saturday</th><td>10:00</td><td>15:00</td></tr>
+          <tr><th scope="row">Sunday</th><td colspan="2">Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact-form" class="contact-form" aria-labelledby="form-heading">
+      <h2 id="form-heading">Send us a message</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Full Name *</label>
+          <input id="full-name" name="full-name" type="text" required>
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel">
+
+          <label for="company">Company / Organization</label>
+          <input id="company" name="company" type="text">
+        </fieldset>
+
+        <fieldset>
+          <legend>Inquiry Details</legend>
+          <label for="service">Service Interest</label>
+          <select id="service" name="service">
+            <option>Web Development</option>
+            <option>Mobile Apps</option>
+            <option>Consulting</option>
+            <option>Other</option>
+          </select>
+
+          <p>Project Timeline</p>
+          <label><input type="radio" name="timeline" value="asap"> ASAP</label>
+          <label><input type="radio" name="timeline" value="1-3"> 1-3 months</label>
+          <label><input type="radio" name="timeline" value="3-6"> 3-6 months</label>
+          <label><input type="radio" name="timeline" value="6+"> 6+ months</label>
+
+          <label for="budget">Budget Range</label>
+          <input id="budget" name="budget" type="range" min="0" max="100" value="50">
+          <div class="range-labels"><span>Low</span><span>High</span></div>
+
+          <p>Project Type</p>
+          <label><input type="checkbox" name="ptype" value="new"> New Website</label>
+          <label><input type="checkbox" name="ptype" value="redesign"> Redesign</label>
+          <label><input type="checkbox" name="ptype" value="mobile"> Mobile App</label>
+          <label><input type="checkbox" name="ptype" value="ecom"> E-commerce</label>
+          <label><input type="checkbox" name="ptype" value="other"> Other</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="description">Project Description *</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+
+          <label for="requirements">Upload Requirements (docs only)</label>
+          <input id="requirements" name="requirements" type="file" accept=".pdf,.doc,.docx,.txt">
+
+          <p>Preferred Contact Method</p>
+          <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+          <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+          <label><input type="radio" name="contact-method" value="video"> Video Call</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms</legend>
+          <label><input type="checkbox" name="terms" required> I agree to the Terms of Service and Privacy Policy *</label>
+          <label><input type="checkbox" name="newsletter"> Subscribe to our newsletter</label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-contact">2025</span> InnovateTech Solutions</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+</body>
+</html>
